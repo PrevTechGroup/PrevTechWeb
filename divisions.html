@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Divisions — PrevTech Group LLC</title>
+  <link rel='stylesheet' href='./assets/css/styles.css' />
+</head>
+<body>
+<header class='site-header small'>
+  <nav class='nav container'>
+    <a class='brand' href='./'>
+      <img src='./assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
+      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
+    </a>
+    <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
+    <ul class='menu'>
+      <li><a href='./divisions.html'>Divisions</a></li>
+      <li><a href='./projects.html'>Projects</a></li>
+      <li><a href='./about.html'>About</a></li>
+      <li><a href='./contact.html'>Contact</a></li>
+      <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
+    </ul>
+  </nav>
+  <section class="sub-hero"><div class="container"><h1>Divisions</h1><p>Specialized units aligned to industry needs and regulatory requirements.</p></div></section>
+</header>
+<main class='container section'>
+  <a id='main'></a>
+  <section class='division'>
+    <img src='./assets/images/div-main.jpg' alt='Maintenance team' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Main</h2>
+      <p>Asset care, preventive and predictive maintenance, and reliability engineering.</p>
+      <ul class='check'>
+        <li>CMMS setup and optimization</li>
+        <li>Preventive & predictive programs</li>
+        <li>Shutdown/turnaround planning</li>
+      </ul>
+    </div>
+  </section>
+  <a id='projects'></a>
+  <section class='division'>
+    <img src='./assets/images/div-projects.jpg' alt='Engineering schematics' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Projects</h2>
+      <p>Engineering, oversight, and execution for brownfield and greenfield projects.</p>
+      <ul class='check'>
+        <li>Scope, budget, and schedule control</li>
+        <li>Owner’s engineer / QA oversight</li>
+        <li>Commissioning and handover</li>
+      </ul>
+    </div>
+  </section>
+  <a id='steril'></a>
+  <section class='division'>
+    <img src='./assets/images/div-steril.jpg' alt='Sterile corridor' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Steril</h2>
+      <p>Sterilization and compliance services for regulated facilities.</p>
+      <ul class='check'>
+        <li>Validated processes and documentation</li>
+        <li>Environmental monitoring</li>
+        <li>Training and audit readiness</li>
+      </ul>
+    </div>
+  </section>
+  <a id='marine'></a>
+  <section class='division'>
+    <img src='./assets/images/div-marine.jpg' alt='Marine vessel' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Marine</h2>
+      <p>Maintenance and repair for marine assets and port equipment.</p>
+      <ul class='check'>
+        <li>Hull and mechanical systems</li>
+        <li>Dockside inspections</li>
+        <li>Lifecycle planning</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excellence in Maintenance & Project<br />
+      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class='footer-nav'>
+      <a href='./divisions.html'>Divisions</a>
+      <a href='./projects.html'>Projects</a>
+      <a href='./about.html'>About</a>
+      <a href='./contact.html'>Contact</a>
+    </nav>
+    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+<script>
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) btn.addEventListener('click', ()=> {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+</script>
+</body>
+</html>

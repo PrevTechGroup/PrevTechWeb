@@ -1,29 +1,24 @@
-# PrevTechWeb (static)
+# PrevTechWeb — Static Site Package
 
-Multilingual static site (EN default + ES) with a simple language switcher and JSON-based i18n.
+This package contains a clean, responsive static site for PrevTech Group LLC.
 
-## Structure
-- `index.html` — Home
-- `about/` — About
-- `divisions/` — Overview + division detail pages
-- `projects.html` — Projects & Clients
-- `contact/` — Contact
-- `assets/css/style.css` — Styles
-- `assets/js/app.js` — Language switch + i18n loader
-- `assets/i18n/en.json`, `assets/i18n/es.json` — Texts
+## Contents
+- `index.html`, `divisions.html`, `projects.html`, `about.html`, `contact.html`
+- `assets/css/styles.css`
+- `assets/images/*` (placeholders + a clean hexagon logo mark)
+- `.nojekyll` (harmless for Azure; useful if later served via GitHub Pages)
 
-## Run locally
-Open any HTML file in a local server (for `fetch`). For example:
+## How to deploy with Azure Static Web Apps (current repo setup)
+1. Copy all files to the repository root (same folder as your current `index.html`).
+2. Commit to the same branch your Azure Static Web Apps workflow uses (currently `main`).
+3. Ensure your workflow `azure-static-web-apps.yml` points to:
+   - `app_location: "/"` (or the relative folder where `index.html` lives)
+   - `api_location: ""` (empty if you have no API)
+   - `output_location: ""` (empty for pure static content)
+4. Push. The workflow will publish automatically.
 
-```bash
-python -m http.server 8080
-# then open http://localhost:8080/index.html
-```
+## Logo
+A clean hexagon SVG mark is included at `assets/images/logo-prevtech.svg`. Replace it with your official brand file using the same filename to keep pages intact.
 
-## Publish on GitHub Pages
-1. Push this folder content to your repository root (branch `main`).
-2. Go to **Settings → Pages**.
-3. In **Source**, choose **Deploy from a branch**, select `main` and **/ (root)**.
-4. Save. Your site will be available at: `https://<org>.github.io/<repo>/`.
-
-> If your site appears under a subpath, links are relative and will work as-is.
+## Images
+All images included are placeholders. Replace with your production images keeping the same filenames to preserve layout.
