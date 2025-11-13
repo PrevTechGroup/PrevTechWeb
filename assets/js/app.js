@@ -1,46 +1,9 @@
-// PrevTech Group - i18n + behavior
-const SUPPORTED = ['en','es'];
-const DEFAULT_LANG = 'en';
-const NESTED = /(\/about\/|\/divisions\/|\/contact\/)/.test(location.pathname);
-const BASE = NESTED ? '../' : './';
+const SUPPORTED=['en','es'];const DEFAULT_LANG='en';const NESTED=/(\/about\/|\/divisions\/|\/contact\/)/.test(location.pathname);const BASE=NESTED?'../':'./';
+function detectLang(){const saved=localStorage.getItem('lang');if(saved&&SUPPORTED.includes(saved))return saved;const nav=(navigator.language||'en').slice(0,2).toLowerCase();return SUPPORTED.includes(nav)?nav:DEFAULT_LANG}
+let state={lang:detectLang(),dict:{}};async function loadI18n(){try{const res=await fetch(`${BASE}assets/i18n/${state.lang}.json`);state.dict=await res.json();applyI18n()}catch(e){console.error('i18n load error',e)}}function t(k){return state.dict[k]||k}
+function applyI18n(){document.documentElement.setAttribute('lang',state.lang);document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.getAttribute('data-i18n'))});const en=document.getElementById('btn-en');const es=document.getElementById('btn-es');if(en&&es){en.setAttribute('aria-pressed',state.lang==='en');es.setAttribute('aria-pressed',state.lang==='es')}}
+function setLang(l){if(!SUPPORTED.includes(l))return;state.lang=l;localStorage.setItem('lang',l);loadI18n()}
+document.addEventListener('DOMContentLoaded',()=>{const en=document.getElementById('btn-en');const es=document.getElementById('btn-es');if(en)en.addEventListener('click',()=>setLang('en'));if(es)es.addEventListener('click',()=>setLang('es'));loadI18n()});
 
-function detectLang(){
-  const saved = localStorage.getItem('lang');
-  if(saved && SUPPORTED.includes(saved)) return saved;
-  const nav = (navigator.language||'en').slice(0,2).toLowerCase();
-  return SUPPORTED.includes(nav) ? nav : DEFAULT_LANG;
-}
-
-let state = {lang: detectLang(), dict: {}};
-
-async function loadI18n(){
-  try{
-    const res = await fetch(`${BASE}assets/i18n/${state.lang}.json`);
-    state.dict = await res.json();
-    applyI18n();
-  }catch(e){console.error('i18n load error', e)}
-}
-
-function t(key){ return state.dict[key] || key; }
-
-function applyI18n(){
-  document.documentElement.setAttribute('lang', state.lang);
-  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.getAttribute('data-i18n')); });
-  // Buttons
-  const btnEn = document.getElementById('btn-en');
-  const btnEs = document.getElementById('btn-es');
-  if(btnEn && btnEs){
-    btnEn.setAttribute('aria-pressed', state.lang==='en');
-    btnEs.setAttribute('aria-pressed', state.lang==='es');
-  }
-}
-
-function setLang(lang){ if(!SUPPORTED.includes(lang)) return; state.lang = lang; localStorage.setItem('lang', lang); loadI18n(); }
-
-window.addEventListener('DOMContentLoaded',()=>{
-  const btnEn = document.getElementById('btn-en');
-  const btnEs = document.getElementById('btn-es');
-  if(btnEn) btnEn.addEventListener('click', ()=>setLang('en'));
-  if(btnEs) btnEs.addEventListener('click', ()=>setLang('es'));
-  loadI18n();
-});
+// Formspree submit handler
+window.addEventListener('DOMContentLoaded',()=>{const form=document.getElementById('contact-form');const status=document.getElementById('form-status');const langHidden=document.getElementById('form-lang');if(form){if(langHidden)langHidden.value=state.lang;form.addEventListener('submit',async e=>{e.preventDefault();if(status)status.textContent=state.lang==='es'?'Enviando...':'Sending...';try{const data=new FormData(form);const res=await fetch(form.action,{method:form.method,body:data,headers:{'Accept':'application/json'}});if(res.ok){form.reset();if(status){status.style.color='#0a7c2f';status.textContent=state.lang==='es'?'¡Gracias! Te contactaremos pronto.':'Thanks! We will contact you soon.'}}else{if(status){status.style.color='#c1121f';status.textContent=state.lang==='es'?'Hubo un problema al enviar el formulario.':'There was a problem submitting the form.'}}}catch(err){if(status){status.style.color='#c1121f';status.textContent=state.lang==='es'?'Error de red. Intenta de nuevo.':'Network error. Please try again.'}}})}});
