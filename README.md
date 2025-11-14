@@ -2,11 +2,11 @@
 
 **Structure**
 - Root (EN):
-  - `index.html`, `divisions.html`, `projects.html`, `about.html`, `contact.html`
-  - `/divisions/` → `main.html`, `projects.html`, `steril.html`, `marine.html`, `ecopower.html`
+  - `index.html`, `divisions.html`, `about.html`, `contact.html`
+  - `/divisions/` → `main.html`, `steril.html`, `marine.html`, `ecopower.html`
 - Spanish `/es/`:
-  - `index.html`, `divisiones.html`, `proyectos.html`, `nosotros.html`, `contacto.html`
-  - `/es/divisiones/` → `main.html`, `proyectos.html`, `steril.html`, `marine.html`, `ecopower.html`
+  - `index.html`, `divisiones.html`, `nosotros.html`, `contacto.html`
+  - `/es/divisiones/` → `main.html`, `steril.html`, `marine.html`, `ecopower.html`
 - Shared assets: `/assets/css/styles.css`, `/assets/images/*`
 
 **Deploy (Azure Static Web Apps)**
