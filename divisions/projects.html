@@ -2,14 +2,13 @@
 
 <header class='site-header'>
   <nav class='nav container'>
-    <a class='brand' href='../' onclick='event.preventDefault(); window.location.href = (location.pathname.includes("/divisions/")?"/":"./")'>
+    <a class='brand' href='../'>
       <img src='../assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
       <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
     </a>
     <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
     <ul class='menu'>
       <li><a href='../divisions.html'>Divisions</a></li>
-      <li><a href='../projects.html'>Projects</a></li>
       <li><a href='../about.html'>About</a></li>
       <li><a href='../contact.html'>Contact</a></li>
       <li><a class='btn btn-primary' href='../contact.html#quote'>Request a Quote</a></li>
@@ -19,17 +18,7 @@
   <section class='hero'><img class='hero-bg' src='../assets/images/div-projects.jpg' alt='PrevTech Projects'/><div class='hero-content container'><h1>PrevTech Projects</h1><p>Engineering, oversight, and execution for brownfield and greenfield projects.</p><a class='btn btn-primary' href='../contact.html#quote'>Request a Quote</a><p class='breadcrumbs'><a href='../index.html'>Home</a> · <a href='../divisions.html'>Divisions</a> · PrevTech Projects</p></div></section>
 </header>
 
-<main class='container section'>
-  <div class='split'>
-    <div>
-      <h2>What we do</h2>
-      <ul class='check'><li>Scope, budget, and schedule control</li><li>Owner’s engineer / QA oversight</li><li>Commissioning and handover</li></ul>
-      <h2>Why PrevTech</h2>
-      <ul class='check'><li>Safety & compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul>
-    </div>
-    <img src='../assets/images/div-projects.jpg' alt='PrevTech Projects' class='division-img'/>
-  </div>
-</main>
+<main class='container section'><div class='split'><div><h2>What we do</h2><ul class='check'><li>Scope, budget, and schedule control</li><li>Owner’s engineer / QA oversight</li><li>Commissioning and handover</li></ul><h2>Why PrevTech</h2><ul class='check'><li>Safety & compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul></div><img class='division-img' src='../assets/images/div-projects.jpg' alt='PrevTech Projects'/></div></main>
 
 <footer class='site-footer'>
   <div class='container footer-grid'>
@@ -40,7 +29,6 @@
     </div>
     <nav class='footer-nav'>
       <a href='../divisions.html'>Divisions</a>
-      <a href='../projects.html'>Projects</a>
       <a href='../about.html'>About</a>
       <a href='../contact.html'>Contact</a>
     </nav>
@@ -51,5 +39,4 @@
 <script>
 const btn=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});}
 </script>
-
 </body></html>
