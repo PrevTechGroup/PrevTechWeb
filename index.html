@@ -5,9 +5,10 @@
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>PrevTech Group LLC — Excellence in Maintenance & Projects</title>
   <link rel='stylesheet' href='./assets/css/styles.css' />
-  <meta name='description' content='Engineering, industrial maintenance, and energy solutions in Puerto Rico.' />
+  <meta name='description' content='Engineering, maintenance, and energy solutions in Puerto Rico.' />
 </head>
 <body>
+
 <header class='site-header'>
   <nav class='nav container'>
     <a class='brand' href='./'>
@@ -21,33 +22,37 @@
       <li><a href='./about.html'>About</a></li>
       <li><a href='./contact.html'>Contact</a></li>
       <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
+      <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
     </ul>
   </nav>
   <section class="hero"><img class="hero-bg" src="./assets/images/hero-industry.jpg" alt="Industrial plant at dusk" /><div class="hero-content container"><h1><span class="accent">EXCELLENCE</span> IN MAINTENANCE<br>&amp; PROJECTS</h1><p>Engineering, industrial maintenance, and energy solutions in Puerto Rico.</p><a class="btn btn-primary" href="./contact.html#quote">Get a Quote</a></div></section>
 </header>
+
 <main>
   <section class='section container'>
     <header class='section-head'>
       <h2>Solutions for Every Industry</h2>
-      <p>We deploy tailored technical strategies through specialized divisions, addressing the unique needs of clients across various sectors.</p>
+      <p>We deploy tailored strategies through specialized divisions.</p>
     </header>
     <div class='feature-split'>
       <div class='pill-cards'>
-        <a class='pill' href='./divisions.html#main'><span class='pill-icon' aria-hidden='true'>🛠️</span><div><h3>PrevTech Main</h3><p>Maintenance solutions and asset management.</p></div></a>
-        <a class='pill' href='./divisions.html#projects'><span class='pill-icon' aria-hidden='true'>📐</span><div><h3>PrevTech Projects</h3><p>Engineering, project oversight, and execution.</p></div></a>
-        <a class='pill' href='./divisions.html#steril'><span class='pill-icon' aria-hidden='true'>🧪</span><div><h3>PrevTech Steril</h3><p>Sterilization services for regulated environments.</p></div></a>
-        <a class='pill' href='./divisions.html#marine'><span class='pill-icon' aria-hidden='true'>⚓</span><div><h3>PrevTech Marine</h3><p>Maintenance and repair of marine vessels.</p></div></a>
+        <a class='pill' href='./divisions.html#main'><span class='pill-icon'>🛠️</span><div><h3>PrevTech Main</h3><p>Maintenance & asset management.</p></div></a>
+        <a class='pill' href='./divisions.html#projects'><span class='pill-icon'>📐</span><div><h3>PrevTech Projects</h3><p>Engineering & execution.</p></div></a>
+        <a class='pill' href='./divisions.html#steril'><span class='pill-icon'>🧪</span><div><h3>PrevTech Steril</h3><p>Sterilization & compliance.</p></div></a>
+        <a class='pill' href='./divisions.html#marine'><span class='pill-icon'>⚓</span><div><h3>PrevTech Marine</h3><p>Marine maintenance.</p></div></a>
+        <a class='pill' href='./divisions.html#ecopower'><span class='pill-icon'>⚡</span><div><h3>PrevTech EcoPower</h3><p>Solar, central inverters & hybrid solutions.</p></div></a>
       </div>
       <div class='cards-grid'>
-        <article class='card'><img src='./assets/images/card-technical.jpg' alt='Technicians with equipment' /><h4>Technical Excellence</h4><p>Procedures aligned to industry standards to maximize uptime and safety.</p></article>
-        <article class='card'><img src='./assets/images/card-energy.jpg' alt='Solar panels and sky' /><h4>Scalable Solutions</h4><p>From single sites to multi-facility portfolios with consistent KPIs.</p></article>
-        <article class='card'><img src='./assets/images/card-team.jpg' alt='Field team with PPE' /><h4>Qualified Teams</h4><p>Skilled personnel, documented training, and auditable methods.</p></article>
-        <article class='card'><img src='./assets/images/card-operations.jpg' alt='Industrial operations' /><h4>Operational Reliability</h4><p>Asset strategies focused on safety, availability, and cost control.</p></article>
+        <article class='card'><img src='./assets/images/card-technical.jpg' alt='Technicians' /><h4>Technical Excellence</h4><p>Aligned to standards to maximize uptime and safety.</p></article>
+        <article class='card'><img src='./assets/images/card-energy.jpg' alt='Solar panels' /><h4>Scalable Solutions</h4><p>From single sites to multi-facility portfolios.</p></article>
+        <article class='card'><img src='./assets/images/card-team.jpg' alt='Field team' /><h4>Qualified Teams</h4><p>Skilled personnel and auditable methods.</p></article>
+        <article class='card'><img src='./assets/images/card-operations.jpg' alt='Operations' /><h4>Operational Reliability</h4><p>Focused on safety, availability and cost.</p></article>
       </div>
     </div>
   </section>
-  <section class='cta-band'><div class='container cta-band-inner'><h3>Need dependable maintenance or project execution?</h3><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></div></section>
+  <section class='cta-band'><div class='container cta-band-inner'><h3>Need dependable maintenance or energy solutions?</h3><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></div></section>
 </main>
+
 <footer class='site-footer'>
   <div class='container footer-grid'>
     <div>
@@ -64,6 +69,8 @@
     <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
   </div>
 </footer>
+
+
 <script>
 const btn = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.menu');
@@ -72,5 +79,6 @@ if (btn && menu) btn.addEventListener('click', ()=> {
   btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 </script>
+
 </body>
 </html>

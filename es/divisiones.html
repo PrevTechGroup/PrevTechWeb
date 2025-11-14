@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Divisiones — PrevTech Group LLC</title>
+  <link rel='stylesheet' href='../assets/css/styles.css' />
+</head>
+<body>
+
+<header class='site-header small'>
+  <nav class='nav container'>
+    <a class='brand' href='../'>
+      <img src='../assets/images/logo-prevtech.svg' alt='Marca PrevTech' class='brand-mark' />
+      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
+    </a>
+    <button class='nav-toggle' aria-label='Abrir menú' aria-expanded='false'>☰</button>
+    <ul class='menu'>
+      <li><a href='./divisiones.html'>Divisiones</a></li>
+      <li><a href='./proyectos.html'>Proyectos</a></li>
+      <li><a href='./nosotros.html'>Nosotros</a></li>
+      <li><a href='./contacto.html'>Contacto</a></li>
+      <li><a class='btn btn-primary' href='./contacto.html#cotizar'>Solicitar Cotización</a></li>
+      <li class='lang-switch'><a href='../'>EN</a> | <a class='active' href='./'>ES</a></li>
+    </ul>
+  </nav>
+  <section class="sub-hero"><div class="container"><h1>Divisiones</h1><p>Unidades especializadas alineadas a las necesidades de la industria.</p></div></section>
+</header>
+
+<main class='container section'>
+  <a id='main'></a>
+  <section class='division'>
+    <img src='../assets/images/div-main.jpg' alt='Equipo de mantenimiento' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Main</h2>
+      <p>Cuidado de activos, mantenimiento preventivo y predictivo, ingeniería de confiabilidad.</p>
+      <ul class='check'><li>Configuración y optimización de CMMS</li><li>Programas preventivos y predictivos</li><li>Planificación de paradas</li></ul>
+    </div>
+  </section>
+
+  <a id='projects'></a>
+  <section class='division'>
+    <img src='../assets/images/div-projects.jpg' alt='Planos de ingeniería' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Projects</h2>
+      <p>Ingeniería, supervisión y ejecución para proyectos brownfield y greenfield.</p>
+      <ul class='check'><li>Control de alcance, presupuesto y cronograma</li><li>Owner’s engineer / QA</li><li>Puesta en marcha y entrega</li></ul>
+    </div>
+  </section>
+
+  <a id='steril'></a>
+  <section class='division'>
+    <img src='../assets/images/div-steril.jpg' alt='Corredor estéril' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Steril</h2>
+      <p>Servicios de esterilización y cumplimiento para instalaciones reguladas.</p>
+      <ul class='check'><li>Procesos validados y documentación</li><li>Monitoreo ambiental</li><li>Capacitación y preparación de auditorías</li></ul>
+    </div>
+  </section>
+
+  <a id='marine'></a>
+  <section class='division'>
+    <img src='../assets/images/div-marine.jpg' alt='Embarcación' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Marine</h2>
+      <p>Mantenimiento y reparación de activos marítimos y equipos portuarios.</p>
+      <ul class='check'><li>Casco y sistemas mecánicos</li><li>Inspecciones en muelle</li><li>Planificación de ciclo de vida</li></ul>
+    </div>
+  </section>
+
+  <a id='ecopower'></a>
+  <section class='division'>
+    <img src='../assets/images/div-ecopower.jpg' alt='Sistemas solares e híbridos' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech EcoPower</h2>
+      <p>Soluciones de energía renovable, integración de inversores centrales y sistemas híbridos con respaldo de generador.</p>
+      <ul class='check'><li>Diseño e instalación solar</li><li>Integración con inversores centrales</li><li>Soluciones híbridas con generador</li><li>Monitoreo y mantenimiento</li></ul>
+    </div>
+  </section>
+</main>
+
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excelencia en Mantenimiento y Proyecto<br />
+      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class='footer-nav'>
+      <a href='./divisiones.html'>Divisiones</a>
+      <a href='./proyectos.html'>Proyectos</a>
+      <a href='./nosotros.html'>Nosotros</a>
+      <a href='./contacto.html'>Contacto</a>
+    </nav>
+    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+
+
+<script>
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) btn.addEventListener('click', ()=> {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+</script>
+
+</body>
+</html>

@@ -7,6 +7,7 @@
   <link rel='stylesheet' href='./assets/css/styles.css' />
 </head>
 <body>
+
 <header class='site-header small'>
   <nav class='nav container'>
     <a class='brand' href='./'>
@@ -20,10 +21,12 @@
       <li><a href='./about.html'>About</a></li>
       <li><a href='./contact.html'>Contact</a></li>
       <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
+      <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
     </ul>
   </nav>
   <section class="sub-hero"><div class="container"><h1>About Us</h1><p>PrevTech Group LLC — Excellence in maintenance and project execution.</p></div></section>
 </header>
+
 <main class='container section'>
   <div class='split'>
     <div>
@@ -42,6 +45,7 @@
     <img class='about-img' src='./assets/images/about-team.jpg' alt='Team at work' />
   </div>
 </main>
+
 <footer class='site-footer'>
   <div class='container footer-grid'>
     <div>
@@ -58,6 +62,8 @@
     <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
   </div>
 </footer>
+
+
 <script>
 const btn = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.menu');
@@ -66,5 +72,6 @@ if (btn && menu) btn.addEventListener('click', ()=> {
   btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 </script>
+
 </body>
 </html>

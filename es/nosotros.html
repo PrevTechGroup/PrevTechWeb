@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Nosotros — PrevTech Group LLC</title>
+  <link rel='stylesheet' href='../assets/css/styles.css' />
+</head>
+<body>
+
+<header class='site-header small'>
+  <nav class='nav container'>
+    <a class='brand' href='../'>
+      <img src='../assets/images/logo-prevtech.svg' alt='Marca PrevTech' class='brand-mark' />
+      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
+    </a>
+    <button class='nav-toggle' aria-label='Abrir menú' aria-expanded='false'>☰</button>
+    <ul class='menu'>
+      <li><a href='./divisiones.html'>Divisiones</a></li>
+      <li><a href='./proyectos.html'>Proyectos</a></li>
+      <li><a href='./nosotros.html'>Nosotros</a></li>
+      <li><a href='./contacto.html'>Contacto</a></li>
+      <li><a class='btn btn-primary' href='./contacto.html#cotizar'>Solicitar Cotización</a></li>
+      <li class='lang-switch'><a href='../'>EN</a> | <a class='active' href='./'>ES</a></li>
+    </ul>
+  </nav>
+  <section class="sub-hero"><div class="container"><h1>Nosotros</h1><p>PrevTech Group LLC — Excelencia en mantenimiento y ejecución de proyectos.</p></div></section>
+</header>
+
+<main class='container section'>
+  <div class='split'>
+    <div>
+      <h2>Misión</h2>
+      <p>Entregar soluciones técnicas confiables, seguras y auditables que maximicen el valor del activo.</p>
+      <h2>Visión</h2>
+      <p>Ser el aliado de confianza para operaciones industriales y comerciales en Puerto Rico.</p>
+      <h2>Valores</h2>
+      <ul class='check'><li>Seguridad primero</li><li>Rigor técnico</li><li>Integridad y transparencia</li><li>Enfoque al cliente</li></ul>
+    </div>
+    <img class='about-img' src='../assets/images/about-team.jpg' alt='Equipo de trabajo' />
+  </div>
+</main>
+
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excelencia en Mantenimiento y Proyecto<br />
+      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class='footer-nav'>
+      <a href='./divisiones.html'>Divisiones</a>
+      <a href='./proyectos.html'>Proyectos</a>
+      <a href='./nosotros.html'>Nosotros</a>
+      <a href='./contacto.html'>Contacto</a>
+    </nav>
+    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+
+
+<script>
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) btn.addEventListener('click', ()=> {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+</script>
+
+</body>
+</html>
