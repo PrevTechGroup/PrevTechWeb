@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang='en'>
-<head>
-  <meta charset='utf-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Contact — PrevTech Group LLC</title>
-  <link rel='stylesheet' href='./assets/css/styles.css' />
-</head>
-<body>
+<!doctype html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>Contact — PrevTech Group LLC</title><link rel='stylesheet' href='./assets/css/styles.css'/></head><body>
 
 <header class='site-header small'>
   <nav class='nav container'>
-    <a class='brand' href='./'>
+    <a class='brand' href='../' onclick='event.preventDefault(); window.location.href = (location.pathname.includes("/divisions/")?"/":"./")'>
       <img src='./assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
       <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
     </a>
@@ -24,38 +16,10 @@
       <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
     </ul>
   </nav>
-  <section class="sub-hero"><div class="container"><h1>Contact</h1><p>Let’s discuss your maintenance, projects or energy needs.</p></div></section>
+  <section class='sub-hero'><div class='container'><h1>Contact</h1><p>Let’s discuss your maintenance, projects or energy needs.</p></div></section>
 </header>
 
-<main class='container section'>
-  <div class='split contact-split'>
-    <div>
-      <h2>Get in touch</h2>
-      <p>Email: <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a></p>
-      <p>Location: Puerto Rico</p>
-      <h3 id='quote'>Request a Quote</h3>
-      <form class='contact-form' netlify>
-        <div class='form-row'><label for='name'>Name*</label><input id='name' name='name' required /></div>
-        <div class='form-row'><label for='email'>Email*</label><input id='email' name='email' type='email' required /></div>
-        <div class='form-row'><label for='service'>Service</label>
-          <select id='service' name='service'>
-            <option>Maintenance</option>
-            <option>Projects</option>
-            <option>Steril</option>
-            <option>Marine</option>
-            <option>EcoPower</option>
-          </select>
-        </div>
-        <div class='form-row'><label for='message'>Message</label><textarea id='message' name='message' rows='5'></textarea></div>
-        <button class='btn btn-primary' type='submit'>Send</button>
-      </form>
-    </div>
-    <div class='contact-card'>
-      <h3>Why PrevTech?</h3>
-      <ul class='check'><li>Safety and compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul>
-    </div>
-  </div>
-</main>
+<main class='container section'><div class='split contact-split'><div><h2>Get in touch</h2><p>Email: <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a></p><p>Location: Puerto Rico</p><h3 id='quote'>Request a Quote</h3><form class='contact-form' netlify><div class='form-row'><label for='name'>Name*</label><input id='name' name='name' required/></div><div class='form-row'><label for='email'>Email*</label><input id='email' name='email' type='email' required/></div><div class='form-row'><label for='service'>Service</label><select id='service' name='service'><option>Maintenance</option><option>Projects</option><option>Steril</option><option>Marine</option><option>EcoPower</option></select></div><div class='form-row'><label for='message'>Message</label><textarea id='message' name='message' rows='5'></textarea></div><button class='btn btn-primary' type='submit'>Send</button></form></div><div class='contact-card'><h3>Why PrevTech?</h3><ul class='check'><li>Safety and compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul></div></div></main>
 
 <footer class='site-footer'>
   <div class='container footer-grid'>
@@ -74,15 +38,7 @@
   </div>
 </footer>
 
-
 <script>
-const btn = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.menu');
-if (btn && menu) btn.addEventListener('click', ()=> {
-  const open = menu.classList.toggle('open');
-  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
+const btn=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});}
 </script>
-
-</body>
-</html>
+</body></html>

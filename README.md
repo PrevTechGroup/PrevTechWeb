@@ -1,20 +1,21 @@
-# PrevTechWeb — Bilingual Static Site (EN/ES) with EcoPower
+# PrevTechWeb — Bilingual (EN/ES) with Separate Division Pages
 
 **Structure**
-- EN (root): `index.html`, `divisions.html`, `projects.html`, `about.html`, `contact.html`
-- ES (`/es/`): `index.html`, `divisiones.html`, `proyectos.html`, `nosotros.html`, `contacto.html`
+- Root (EN):
+  - `index.html`, `divisions.html`, `projects.html`, `about.html`, `contact.html`
+  - `/divisions/` → `main.html`, `projects.html`, `steril.html`, `marine.html`, `ecopower.html`
+- Spanish `/es/`:
+  - `index.html`, `divisiones.html`, `proyectos.html`, `nosotros.html`, `contacto.html`
+  - `/es/divisiones/` → `main.html`, `proyectos.html`, `steril.html`, `marine.html`, `ecopower.html`
 - Shared assets: `/assets/css/styles.css`, `/assets/images/*`
 
-**Azure Static Web Apps**
-- Keep `app_location: "/"`, `api_location: ""`, `output_location: ""` in your workflow.
-- After pushing to `main`, the site is published automatically.
+**Deploy (Azure Static Web Apps)**
+- Keep workflow with `app_location: "/"`, `api_location: ""`, `output_location: ""`.
+- Push to `main` and the site will publish.
 
 **Language switch**
-- EN navbar links to `/es/`.
-- ES navbar links back to `/`.
+- EN pages link to `/es/` counterparts; ES pages link back to EN.
 
-**Logo**
-- `assets/images/logo-prevtech.svg` contains the hexagon with internal diagonal bar.
-
-**Images**
+**Images & Logo**
 - Placeholders included. Replace with production images keeping filenames.
+- `assets/images/logo-prevtech.svg` uses the hexagon with internal diagonal bar.

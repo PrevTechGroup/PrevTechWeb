@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang='en'>
-<head>
-  <meta charset='utf-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Projects — PrevTech Group LLC</title>
-  <link rel='stylesheet' href='./assets/css/styles.css' />
-</head>
-<body>
+<!doctype html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>Projects — PrevTech Group LLC</title><link rel='stylesheet' href='./assets/css/styles.css'/></head><body>
 
 <header class='site-header small'>
   <nav class='nav container'>
-    <a class='brand' href='./'>
+    <a class='brand' href='../' onclick='event.preventDefault(); window.location.href = (location.pathname.includes("/divisions/")?"/":"./")'>
       <img src='./assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
       <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
     </a>
@@ -24,29 +16,19 @@
       <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
     </ul>
   </nav>
-  <section class="sub-hero"><div class="container"><h1>Projects</h1><p>Selected work highlighting engineering quality, safety, and on-time delivery.</p></div></section>
+  <section class='sub-hero'><div class='container'><h1>Projects</h1><p>Selected work highlighting engineering quality, safety, and on-time delivery.</p></div></section>
 </header>
 
-<main class='container section'>
-  <div class='cards-grid projects-grid'>
-    <article class='card project'>
-      <img src='./assets/images/proj-power.jpg' alt='Power system installation' />
-      <div class='project-body'><h3>Central Inverter Retrofit</h3><p>System upgrade enabling generator-backed charging for resilience.</p><ul class='tags'><li>Energy</li><li>Retrofit</li><li>Safety</li></ul></div>
-    </article>
-    <article class='card project'>
-      <img src='./assets/images/proj-sterile.jpg' alt='Sterile facility' />
-      <div class='project-body'><h3>Sterile Facility Commissioning</h3><p>Validation and documentation meeting strict regulatory requirements.</p><ul class='tags'><li>Steril</li><li>Validation</li><li>QA</li></ul></div>
-    </article>
-    <article class='card project'>
-      <img src='./assets/images/proj-marine.jpg' alt='Marine maintenance' />
-      <div class='project-body'><h3>Marine Dock Overhaul</h3><p>Mechanical repairs and lifecycle planning for port operations.</p><ul class='tags'><li>Marine</li><li>Reliability</li><li>Mechanical</li></ul></div>
-    </article>
-    <article class='card project'>
-      <img src='./assets/images/proj-ecopower.jpg' alt='Hybrid solar + generator system' />
-      <div class='project-body'><h3>Hybrid Solar + Generator System</h3><p>Grid-tied solar with central inverter and generator-backed charging for resilience.</p><ul class='tags'><li>EcoPower</li><li>Hybrid</li><li>Resilience</li></ul></div>
-    </article>
-  </div>
-</main>
+<main class='container section'><div class='cards-grid projects-grid'>
+    <article class='card project'><img src='./assets/images/proj-power.jpg' alt='Power system installation'/>
+    <div class='project-body'><h3>Central Inverter Retrofit</h3><p>System upgrade enabling generator-backed charging for resilience.</p><ul class='tags'><li>Energy</li><li>Retrofit</li><li>Safety</li></ul></div></article>
+    <article class='card project'><img src='./assets/images/proj-sterile.jpg' alt='Sterile facility'/>
+    <div class='project-body'><h3>Sterile Facility Commissioning</h3><p>Validation and documentation meeting strict regulatory requirements.</p><ul class='tags'><li>Steril</li><li>Validation</li><li>QA</li></ul></div></article>
+    <article class='card project'><img src='./assets/images/proj-marine.jpg' alt='Marine maintenance'/>
+    <div class='project-body'><h3>Marine Dock Overhaul</h3><p>Mechanical repairs and lifecycle planning for port operations.</p><ul class='tags'><li>Marine</li><li>Reliability</li><li>Mechanical</li></ul></div></article>
+    <article class='card project'><img src='./assets/images/proj-ecopower.jpg' alt='Hybrid solar + generator'/>
+    <div class='project-body'><h3>Hybrid Solar + Generator System</h3><p>Grid-tied solar with central inverter and generator-backed charging for resilience.</p><ul class='tags'><li>EcoPower</li><li>Hybrid</li><li>Resilience</li></ul></div></article>
+  </div></main>
 
 <footer class='site-footer'>
   <div class='container footer-grid'>
@@ -65,15 +47,7 @@
   </div>
 </footer>
 
-
 <script>
-const btn = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.menu');
-if (btn && menu) btn.addEventListener('click', ()=> {
-  const open = menu.classList.toggle('open');
-  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
+const btn=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});}
 </script>
-
-</body>
-</html>
+</body></html>
