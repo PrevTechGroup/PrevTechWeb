@@ -1,99 +1,12 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Contact — PrevTech Group</title>
-  ../assets/css/style.css
-</head>
-<body>
-<header class="site-header">
-  <div class="container navbar">
-    <div class="nav-left">
-      <a href="../index.html<img src="../assets/img/logo.jpg" alt="PrevTech Group" class="ihtml</a>
-        <a data-i18n="nav.divisions" href="../divisionsn="nav.projects" hrefabout/index.html</a>
-        <a data-i18n="nav.contact" href="../contact/index.html" classyle="display:flex;align-items:center;gap:12px">
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button id="btn-en" aria-pressed="true">EN</button>
-        <button id="btn-es" aria-pressed="false">ES</button>
-      </div>
-      <a class="btn-primary" data-i18n="cta.quote" href="../contact/index.html"container hero">
-  <h1 class="h1" data-i18n="contact.title"></h1>
-  <div class="grid cols-2">
-    <div class="card">
-      <h3 class="h2" data-i18n="contact.form"></h3>
-      <p class="p" data-i18n="contact.form.desc"></p>
+<form action="https://formlzoyw
+  <label>Your name:</label>
+  <input type="text" name="name" required>
 
-      <!-- ✅ Formspree Integration -->
-      <form id="contact-form" action="https://formspreeass="p" data-i18n="contact.name"></label>
-        <input name="name" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/>
+  <label>Your email:</label>
+  <input type="email" name="email" required>
 
-        <label class="p" data-i18n="contact.email" style="margin-top:14px;display:block"></label>
-        <input type="email" name="email" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/>
+  <label>Your message:</label>
+  <textarea name="message" required></textarea>
 
-        <label class="p" data-i18n="contact.phone" style="margin-top:14px;display:block"></label>
-        <input name="phone" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/>
-
-        <label class="p" data-i18n="contact.subject" style="margin-top:14px;display:block"></label>
-        <input name="subject" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/>
-
-        <label class="p" data-i18n="contact.message" style="margin-top:14px;display:block"></label>
-        <textarea name="message" rows="6" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"></textarea>
-
-        <input type="hidden" name="lang" id="form-lang" value="en" />
-        <div style="margin-top:14px">
-          <button class="btn-primary" type="submit">Send</button>
-        </div>
-        <p id="form-status" class="p" style="margin-top:10px;"></p>
-      </form>
-    </div>
-
-    <div class="card">
-      <h3 class="h2" data-i18n="contact.company"></h3>
-      <p class="p"><span data-i18n="contact.city"></span></p>
-      <p class="p"><a href="mailto:carmelo.gonzalez@prevtechgrouplo.gonzalez@prevtechgroup.com</a></p>
-      <div class="card" style="margin-top:10px">
-        <h4 class="h2" data-i18n="contact.area"></h4>
-        <p class="p" data-i18n="contact.area.desc"></p>
-        <div class="placeholder"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container inner">
-    <div>
-      <div class="p">PrevTech Group LLC — <span data-i18n="footer.tagline"></span></div>
-      <div class="p"><span data-i18n="footer.addr"></span> · <a href="mailto:carmelo.gonzalez@prevtechgroup.com" data-i18n="    <div><span class="badge">PR</span></div>
-  </div>
-</footer>
-
-<!-- ✅ Script for AJAX submission -->
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function(event) {
-  event.preventDefault();
-  const form = event.target;
-  const status = document.getElementById("form-status");
-  const data = new FormData(form);
-
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if (response.ok) {
-      status.textContent = "Message sent successfully!";
-      form.reset();
-    } else {
-      status.textContent = "Oops! Something went wrong.";
-    }
-  } catch (error) {
-    status.textContent = "Network error. Please try again.";
-  }
-});
-</script>
-</body>
-</html>
+  <button type="submit">Send</button>
+</form>
