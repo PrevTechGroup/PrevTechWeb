@@ -5,34 +5,42 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>PrevTech Group LLC — Excellence in Maintenance & Projects</title>
-  <link rel="stylesheet" href="./assets/css/styles.csss="site-header">
+  <link rel="stylesheetss
+
+  <!-- Ayuda a que el navegador envíe el Referer de forma compatible con Formspree -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
+<body>
+
+<header class="site-header">
   <nav class="nav container">
-    <a class="brand" hrefassets/images/logo-prevtech.svg" alt="PrevTech mark" class="brand-mark"s="brand-light">GROUP</span></span>
+    <a class="brand"c="./assets/images/logo-prevtech.svg" alt="PrevTech mark">PREVTECH<span class="brand-light">GROUP</span></span>
     </a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <ul class="menu">
-      <li><a href="./divmlDivisions</a></li>
-      <li><a href="./about.html</li>
-      <li><a href="./contact.html" class="     <li><a class="btn btnuote</a></li>
-      <li class="lang-switch"><a class="active" href="./>
+      <li><a href="./divisionssions</a></li>
+      <li>./about.htmlAbout</a></li>
+      <li><a href="./contact.html" class
+      <li><a class="btn btn-primary" href="#   <li class="lang-switch"><a class="activeES</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <img class="hero-bg" src="./assets/images/hero-industry.jpg" alt="Industrial     <h1><span class="accent">EXCELLENCE</span> IN MAINTENANCE<br>&amp; PROJECTS</h1>
+    <img class="hero-bg" src="./assets/images/hero-industry.jpg"nt container">
+      <h1><span class="accent">EXCELLENCE</span> IN MAINTENANCE<br>&amp; PROJECTS</h1>
       <p>Engineering, industrial maintenance, and energy solutions in Puerto Rico.</p>
       <a class="btn btn-primary" href="#quotection>
 
-  <!-- ✅ FORMULARIO DE CONTACTO -->
+  <!-- FORMULARIO en tu misma sección (#quote), sin cambiar estilos -->
   <section id="quote" class="section container">
     <header class="section-head">
       <h2>Request a Quote</h2>
       <p>Fill out the form and we’ll get back to you shortly.</p>
     </header>
 
-    <form id="contact-form" action="https://formspree.io/f/myzlzoyw" method="POST" classlabel>
+    <form id="contact-form" action="https://formspree.io/f/myzlzoyw" method="POST>Name</label>
         <input type="text" name="name" required placeholder="Your name" />
       </div>
 
@@ -56,10 +64,17 @@
         <textarea name="message" rows="6" required placeholder="Your message"></textarea>
       </div>
 
+      <!-- campo opcional que usabas -->
       <input type="hidden" name="lang" value="en" />
 
       <button type="submit" class="btn btn-primary">Send</button>
+
+      <!-- Estado visible + caja de diagnóstico (colapsable por CSS si lo deseas) -->
       <p id="form-status" style="margin-top:10px;"></p>
+      <details style="margin-top:8px">
+        <summary>Diagnostic details</summary>
+        <pre id="diag" style="white-space:pre-wrap"></pre>
+      </details>
     </form>
   </section>
 </main>
@@ -69,22 +84,23 @@
     <div>
       <strong>PrevTech Group LLC</strong><br />
       Excellence in Maintenance & Project<br />
-      <a href="mailto:carmelo.gonzalez@prevtechcarmelo.gonzalez@prevtechgroup.com</a>
+      <a href="mailto:carmelo.gonztechgroup.comcarmelo.gonzalez@prevtechgroup.com</a>
     </div>
     <nav class="footer-nav">
       ./divisions.htmlDivisions</a>
-      <a href="./aboutt</a>
-      <a href="./contact.htmla>
+      <a href="./about.html
+      <acontact.htmlContact</a>
     </nav>
     <div class="footer-copy">© 2025 PrevTech Group LLC</div>
   </div>
 </footer>
 
-<!-- ✅ SCRIPT PARA ENVÍO AJAX -->
+<!-- Envío AJAX con logs detallados -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
+  const form   = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
+  const diag   = document.getElementById('diag');
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -92,33 +108,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
     try {
       const data = new FormData(form);
+
+      // IMPORTANTE: no fijar manualmente Content-Type con FormData.
       const res = await fetch(form.action, {
-        method: 'POST',
+        method: form.method,
         body: data,
         headers: { 'Accept': 'application/json' }
       });
+
+      const text = await res.text();
+      // Log extendido para depurar cualquier respuesta
+      diag.textContent = [
+        'HTTP Status: ' + res.status,
+        'OK: ' + res.ok,
+        'URL: ' + form.action,
+        'Response body:',
+        text
+      ].join('\n');
+
+      // Si es JSON, mostrar errores de Formspree
+      let json = null;
+      try { json = JSON.parse(text); } catch (_) {}
 
       if (res.ok) {
         status.textContent = 'Thank you! Your message has been sent.';
         form.reset();
       } else {
-        const err = await res.json();
-        status.textContent = err.errors ? err.errors[0].message : 'Error sending message.';
+        const msg = (json && json.errors && json.errors[0] && json.errors[0].message)
+          ? json.errors[0].message
+          : 'Error sending message. See Diagnostic details.';
+        status.textContent = msg;
       }
     } catch (error) {
       status.textContent = 'Network error. Please try again later.';
+      diag.textContent = 'Exception: ' + (error && (error.stack || error.message) || String(error));
     }
   });
 });
 </script>
 
 <script>
-const btn=document.querySelector('.nav-toggle');
-const menu=document.querySelector('.menu');
-if(btn && menu){
-  btn.addEventListener('click',()=>{
-    const open=menu.classList.toggle('open');
-    btn.setAttribute('aria-expanded',open?'true':'false');
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 }
 </script>
