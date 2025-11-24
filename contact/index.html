@@ -1,1 +1,123 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Contact — PrevTech Group</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header class="site-header"><div class="container navbar"><div class="nav-left"><a href="../index.html"><img src="../assets/img/logo.jpg" alt="PrevTech Group" class="logo"/></a><nav><a data-i18n="nav.home" href="../index.html"></a><a data-i18n="nav.divisions" href="../divisions/index.html"></a><a data-i18n="nav.projects" href="../projects.html"></a><a data-i18n="nav.about" href="../about/index.html"></a><a data-i18n="nav.contact" href="../contact/index.html" class="active"></a></nav></div><div style="display:flex;align-items:center;gap:12px"><div class="lang-switch" role="group" aria-label="Language"><button id="btn-en" aria-pressed="true">EN</button><button id="btn-es" aria-pressed="false">ES</button></div><a class="btn-primary" data-i18n="cta.quote" href="../contact/index.html"></a></div></div></header><section class="container hero"><h1 class="h1" data-i18n="contact.title"></h1><div class="grid cols-2"><div class="card"><h3 class="h2" data-i18n="contact.form"></h3><p class="p" data-i18n="contact.form.desc"></p><form id="contact-form" action="https://formspree.io/f/myzlzoyw" method="POST"><label class="p" data-i18n="contact.name"></label><input name="name" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/><label class="p" data-i18n="contact.email" style="margin-top:14px;display:block"></label><input type="email" name="email" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/><label class="p" data-i18n="contact.phone" style="margin-top:14px;display:block"></label><input name="phone" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/><label class="p" data-i18n="contact.subject" style="margin-top:14px;display:block"></label><input name="subject" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"/><label class="p" data-i18n="contact.message" style="margin-top:14px;display:block"></label><textarea name="message" rows="6" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:10px"></textarea><input type="hidden" name="lang" id="form-lang" value="en" /><div style="margin-top:14px"><button class="btn-primary" type="submit">Send</button></div><p id="form-status" class="p" style="margin-top:10px;"></p></form></div><div class="card"><h3 class="h2" data-i18n="contact.company"></h3><p class="p"><span data-i18n="contact.city"></span></p><p class="p"><a href="mailto:carmelo.gonzalez@prevtechgroup.com">carmelo.gonzalez@prevtechgroup.com</a></p><div class="card" style="margin-top:10px"><h4 class="h2" data-i18n="contact.area"></h4><p class="p" data-i18n="contact.area.desc"></p><div class="placeholder"></div></div></div></div></section><footer class="site-footer"><div class="container inner"><div><div class="p">PrevTech Group LLC — <span data-i18n="footer.tagline"></span></div><div class="p"><span data-i18n="footer.addr"></span> · <a href="mailto:carmelo.gonzalez@prevtechgroup.com" data-i18n="footer.email"></a></div></div><div><span class="badge">PR</span></div></div><script src="../assets/js/app.js"></script></footer></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — PrevTech Group LLC</title>
+  ./assets/css/styles.css
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    ./
+      <img src="./assets/images/logo-prevtech.svg" alt="PrevTech mark">PREVTECH<span class="brand-light">GROUP</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li>./divisions.htmlDivisions</a></li>
+      <li>./about.htmlAbout</a></li>
+      <li><a href="./contact.html" class="activeli>#quoteRequest a Quote</a></li>
+      <li class="lang-switch">./EN</a> | ./es/ES</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img class="hero-bg" src="./assets/images/hero-industry.jpg" alt="Industrial     <h1><span class="accent">CONTACT</span> US</h1>
+      <p>We’re ready to assist you with maintenance and energy solutions.</p>
+    </div>
+  </section>
+
+  <!-- ✅ FORMULARIO DE CONTACTO -->
+  <section id="quote" class="section container">
+    <header class="section-head">
+      <h2>Request a Quote</h2>
+      <p>Fill out the form and we’ll get back to you shortly.</p>
+    </header>
+
+    <form id="contact-form" action="https://formspree.io/f/myzlzoyw"<input type="text" name="name" required placeholder="Your name" />
+
+      <label>Email</label>
+      <input type="email" name="email" required placeholder="Your email" />
+
+      <label>Phone</label>
+      <input type="text" name="phone" placeholder="Your phone number" />
+
+      <label>Subject</label>
+      <input type="text" name="subject" placeholder="Subject" />
+
+      <label>Message</label>
+      <textarea name="message" rows="6" required placeholder="Your message"></textarea>
+
+      <input type="hidden" name="lang" value="en" />
+
+      <button type="submit" class="btn btn-primary">Send</button>
+      <p id="form-status" style="margin-top:10px;"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excellence in Maintenance & Project<br />
+      <a href="mailto:carmelo.gonzalez@roup.comcarmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class="footer-nav">
+      ./divisions.htmlDivisions</a>
+      ./about.htmlAbout</a>
+      ./contact.htmlContact</a>
+    </nav>
+    <div class="footer-copy">© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+
+<!-- ✅ SCRIPT PARA ENVÍO AJAX -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    status.textContent = 'Sending...';
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        status.textContent = 'Thank you! Your message has been sent.';
+        form.reset();
+      } else {
+        const err = await res.json();
+        status.textContent = err.errors ? err.errors[0].message : 'Error sending message.';
+      }
+    } catch (error) {
+      status.textContent = 'Network error. Please try again later.';
+    }
+  });
+});
+</script>
+
+<script>
+const btn=document.querySelector('.nav-toggle');
+const menu=document.querySelector('.menu');
+if(btn && menu){
+  btn.addEventListener('click',()=>{
+    const open=menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+}
+</script>
+
+</body>
+</html>
