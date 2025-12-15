@@ -1,1 +1,42 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Division — PrevTech Group</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header class="site-header"><div class="container navbar"><div class="nav-left"><a href="../index.html"><img src="../assets/img/logo.jpg" alt="PrevTech Group" class="logo"/></a><nav><a data-i18n="nav.home" href="../index.html"></a><a data-i18n="nav.divisions" href="../divisions/index.html" class="active"></a><a data-i18n="nav.projects" href="../projects.html"></a><a data-i18n="nav.about" href="../about/index.html"></a><a data-i18n="nav.contact" href="../contact/index.html"></a></nav></div><div style="display:flex;align-items:center;gap:12px"><div class="lang-switch" role="group" aria-label="Language"><button id="btn-en" aria-pressed="true">EN</button><button id="btn-es" aria-pressed="false">ES</button></div><a class="btn-primary" data-i18n="cta.quote" href="../contact/index.html"></a></div></div></header><section class="container hero"><h1 class="h1" data-i18n="marine.title"></h1><div class="card"><p class="p" data-i18n="marine.intro"></p></div><div class="grid cols-2" style="margin-top:20px"><div class="card"><h3 class="h2">Key Services</h3><p class="p" data-i18n="marine.left"></p></div><div class="card"><h3 class="h2">Operational Focus</h3><p class="p" data-i18n="marine.right"></p></div></div></section><footer class="site-footer"><div class="container inner"><div><div class="p">PrevTech Group LLC — <span data-i18n="footer.tagline"></span></div><div class="p"><span data-i18n="footer.addr"></span> · <a href="mailto:carmelo.gonzalez@prevtechgroup.com" data-i18n="footer.email"></a></div></div><div><span class="badge">PR</span></div></div><script src="../assets/js/app.js"></script></footer></body></html>
+<!doctype html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>PrevTech Marine — PrevTech Group LLC</title><link rel='stylesheet' href='../assets/css/styles.css'/></head><body>
+
+<header class='site-header'>
+  <nav class='nav container'>
+    <a class='brand' href='../'>
+      <img src='../assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
+      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
+    </a>
+    <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
+    <ul class='menu'>
+      <li><a href='../divisions.html'>Divisions</a></li>
+      <li><a href='../about.html'>About</a></li>
+      <li><a href='../contact.html'>Contact</a></li>
+      <li><a class='btn btn-primary' href='../contact.html#quote'>Request a Quote</a></li>
+      <li class='lang-switch'><a class='active' href='../'>EN</a> | <a href='../es/'>ES</a></li>
+    </ul>
+  </nav>
+  <section class='hero'><img class='hero-bg' src='../assets/images/div-marine.jpg' alt='PrevTech Marine'/><div class='hero-content container'><h1>PrevTech Marine</h1><p>Maintenance and repair for marine assets and port equipment.</p><a class='btn btn-primary' href='../contact.html#quote'>Request a Quote</a><p class='breadcrumbs'><a href='../index.html'>Home</a> · <a href='../divisions.html'>Divisions</a> · PrevTech Marine</p></div></section>
+</header>
+
+<main class='container section'><div class='split'><div><h2>What we do</h2><ul class='check'><li>Hull and mechanical systems</li><li>Dockside inspections</li><li>Lifecycle planning</li></ul><h2>Why PrevTech</h2><ul class='check'><li>Safety & compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul></div><img class='division-img' src='../assets/images/div-marine.jpg' alt='PrevTech Marine'/></div></main>
+
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excellence in Maintenance & Project<br />
+      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class='footer-nav'>
+      <a href='../divisions.html'>Divisions</a>
+      <a href='../about.html'>About</a>
+      <a href='../contact.html'>Contact</a>
+    </nav>
+    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+
+<script>
+const btn=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});}
+</script>
+</body></html>
