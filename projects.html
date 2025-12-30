@@ -1,1 +1,79 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Projects — PrevTech Group</title><link rel="stylesheet" href="assets/css/style.css"/></head><body><header class="site-header"><div class="container navbar"><div class="nav-left"><a href="index.html"><img src="assets/img/logo.jpg" alt="PrevTech Group" class="logo"/></a><nav><a data-i18n="nav.home" href="index.html"></a><a data-i18n="nav.divisions" href="divisions/index.html"></a><a data-i18n="nav.projects" href="projects.html" class="active"></a><a data-i18n="nav.about" href="about/index.html"></a><a data-i18n="nav.contact" href="contact/index.html"></a></nav></div><div style="display:flex;align-items:center;gap:12px"><div class="lang-switch" role="group" aria-label="Language"><button id="btn-en" aria-pressed="true">EN</button><button id="btn-es" aria-pressed="false">ES</button></div><a class="btn-primary" data-i18n="cta.quote" href="contact/index.html"></a></div></div></header><section class="container hero"><h1 class="h1" data-i18n="pc.title"></h1><div class="card"><p class="p" data-i18n="pc.clients"></p></div><div class="card" style="margin-top:20px"><h3 class="h2">Featured Projects</h3><p class="p" data-i18n="pc.featured"></p><div class="grid cols-4" style="margin-top:10px"><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div><div class="placeholder"></div></div></div></section><footer class="site-footer"><div class="container inner"><div><div class="p">PrevTech Group LLC — <span data-i18n="footer.tagline"></span></div><div class="p"><span data-i18n="footer.addr"></span> · <a href="mailto:carmelo.gonzalez@prevtechgroup.com" data-i18n="footer.email"></a></div></div><div><span class="badge">PR</span></div></div><script src="assets/js/app.js"></script></footer></body></html>
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Projects — PrevTech Group LLC</title>
+  <link rel='stylesheet' href='./assets/css/styles.css' />
+</head>
+<body>
+
+<header class='site-header small'>
+  <nav class='nav container'>
+    <a class='brand' href='./'>
+      <img src='./assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
+      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
+    </a>
+    <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
+    <ul class='menu'>
+      <li><a href='./divisions.html'>Divisions</a></li>
+      <li><a href='./projects.html'>Projects</a></li>
+      <li><a href='./about.html'>About</a></li>
+      <li><a href='./contact.html'>Contact</a></li>
+      <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
+      <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
+    </ul>
+  </nav>
+  <section class="sub-hero"><div class="container"><h1>Projects</h1><p>Selected work highlighting engineering quality, safety, and on-time delivery.</p></div></section>
+</header>
+
+<main class='container section'>
+  <div class='cards-grid projects-grid'>
+    <article class='card project'>
+      <img src='./assets/images/proj-power.jpg' alt='Power system installation' />
+      <div class='project-body'><h3>Central Inverter Retrofit</h3><p>System upgrade enabling generator-backed charging for resilience.</p><ul class='tags'><li>Energy</li><li>Retrofit</li><li>Safety</li></ul></div>
+    </article>
+    <article class='card project'>
+      <img src='./assets/images/proj-sterile.jpg' alt='Sterile facility' />
+      <div class='project-body'><h3>Sterile Facility Commissioning</h3><p>Validation and documentation meeting strict regulatory requirements.</p><ul class='tags'><li>Steril</li><li>Validation</li><li>QA</li></ul></div>
+    </article>
+    <article class='card project'>
+      <img src='./assets/images/proj-marine.jpg' alt='Marine maintenance' />
+      <div class='project-body'><h3>Marine Dock Overhaul</h3><p>Mechanical repairs and lifecycle planning for port operations.</p><ul class='tags'><li>Marine</li><li>Reliability</li><li>Mechanical</li></ul></div>
+    </article>
+    <article class='card project'>
+      <img src='./assets/images/proj-ecopower.jpg' alt='Hybrid solar + generator system' />
+      <div class='project-body'><h3>Hybrid Solar + Generator System</h3><p>Grid-tied solar with central inverter and generator-backed charging for resilience.</p><ul class='tags'><li>EcoPower</li><li>Hybrid</li><li>Resilience</li></ul></div>
+    </article>
+  </div>
+</main>
+
+<footer class='site-footer'>
+  <div class='container footer-grid'>
+    <div>
+      <strong>PrevTech Group LLC</strong><br />
+      Excellence in Maintenance & Project<br />
+      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
+    </div>
+    <nav class='footer-nav'>
+      <a href='./divisions.html'>Divisions</a>
+      <a href='./projects.html'>Projects</a>
+      <a href='./about.html'>About</a>
+      <a href='./contact.html'>Contact</a>
+    </nav>
+    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
+  </div>
+</footer>
+
+
+<script>
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) btn.addEventListener('click', ()=> {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+</script>
+
+</body>
+</html>

@@ -1,4 +1,12 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>Divisions — PrevTech Group LLC</title><link rel='stylesheet' href='./assets/css/styles.css'/></head><body>
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Divisions — PrevTech Group LLC</title>
+  <link rel='stylesheet' href='./assets/css/styles.css' />
+</head>
+<body>
 
 <header class='site-header small'>
   <nav class='nav container'>
@@ -9,21 +17,71 @@
     <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
     <ul class='menu'>
       <li><a href='./divisions.html'>Divisions</a></li>
+      <li><a href='./projects.html'>Projects</a></li>
       <li><a href='./about.html'>About</a></li>
       <li><a href='./contact.html'>Contact</a></li>
       <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
       <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
     </ul>
   </nav>
-  <section class="sub-hero"><div class="container"><h1>Divisions</h1><p>Explore our specialized units.</p></div></section>
+  <section class="sub-hero"><div class="container"><h1>Divisions</h1><p>Specialized units aligned to industry needs and regulatory requirements.</p></div></section>
 </header>
 
 <main class='container section'>
-  <div class='division'><img src='./assets/images/div-main.jpg' class='division-img' alt='Main'/><div class='division-body'><h2><a href='./divisions/main.html'>PrevTech Main</a></h2><p>Asset care, preventive & predictive maintenance.</p></div></div>
-  <div class='division'><img src='./assets/images/div-projects.jpg' class='division-img' alt='Projects'/><div class='division-body'><h2><a href='./divisions/projects.html'>PrevTech Projects</a></h2><p>Engineering, oversight, and execution.</p></div></div>
-  <div class='division'><img src='./assets/images/div-steril.jpg' class='division-img' alt='Steril'/><div class='division-body'><h2><a href='./divisions/steril.html'>PrevTech Steril</a></h2><p>Sterilization & compliance.</p></div></div>
-  <div class='division'><img src='./assets/images/div-marine.jpg' class='division-img' alt='Marine'/><div class='division-body'><h2><a href='./divisions/marine.html'>PrevTech Marine</a></h2><p>Marine assets and port equipment.</p></div></div>
-  <div class='division'><img src='./assets/images/div-ecopower.jpg' class='division-img' alt='EcoPower'/><div class='division-body'><h2><a href='./divisions/ecopower.html'>PrevTech EcoPower</a></h2><p>Renewables, central inverters & hybrids.</p></div></div>
+  <a id='main'></a>
+  <section class='division'>
+    <img src='./assets/images/div-main.jpg' alt='Maintenance team' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Main</h2>
+      <p>Asset care, preventive & predictive maintenance, reliability engineering.</p>
+      <ul class='check'><li>CMMS setup and optimization</li><li>Preventive & predictive programs</li><li>Shutdown/turnaround planning</li></ul>
+    </div>
+  </section>
+
+  <a id='projects'></a>
+  <section class='division'>
+    <img src='./assets/images/div-projects.jpg' alt='Engineering schematics' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Projects</h2>
+      <p>Engineering, oversight, and execution for brown/greenfield projects.</p>
+      <ul class='check'><li>Scope, budget, and schedule control</li><li>Owner’s engineer / QA oversight</li><li>Commissioning and handover</li></ul>
+    </div>
+  </section>
+
+  <a id='steril'></a>
+  <section class='division'>
+    <img src='./assets/images/div-steril.jpg' alt='Sterile corridor' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Steril</h2>
+      <p>Sterilization & compliance services for regulated facilities.</p>
+      <ul class='check'><li>Validated processes and documentation</li><li>Environmental monitoring</li><li>Training and audit readiness</li></ul>
+    </div>
+  </section>
+
+  <a id='marine'></a>
+  <section class='division'>
+    <img src='./assets/images/div-marine.jpg' alt='Marine vessel' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech Marine</h2>
+      <p>Maintenance and repair for marine assets and port equipment.</p>
+      <ul class='check'><li>Hull and mechanical systems</li><li>Dockside inspections</li><li>Lifecycle planning</li></ul>
+    </div>
+  </section>
+
+  <a id='ecopower'></a>
+  <section class='division'>
+    <img src='./assets/images/div-ecopower.jpg' alt='Solar and hybrid systems' class='division-img' />
+    <div class='division-body'>
+      <h2>PrevTech EcoPower</h2>
+      <p>Renewable solutions, central inverter integration, and hybrid systems with generator backup.</p>
+      <ul class='check'>
+        <li>Solar design & installation</li>
+        <li>Central inverter integration</li>
+        <li>Hybrid solutions with generator</li>
+        <li>Monitoring & maintenance</li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <footer class='site-footer'>
@@ -35,6 +93,7 @@
     </div>
     <nav class='footer-nav'>
       <a href='./divisions.html'>Divisions</a>
+      <a href='./projects.html'>Projects</a>
       <a href='./about.html'>About</a>
       <a href='./contact.html'>Contact</a>
     </nav>
@@ -42,7 +101,15 @@
   </div>
 </footer>
 
+
 <script>
-const btn=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});}
+const btn = document.querySelector('.nav-toggle');
+const menu = document.querySelector('.menu');
+if (btn && menu) btn.addEventListener('click', ()=> {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
 </script>
-</body></html>
+
+</body>
+</html>
