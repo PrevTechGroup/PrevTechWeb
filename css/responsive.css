@@ -1,0 +1,407 @@
+/* =========================================================
+   PREVTECH GROUP — RESPONSIVE STYLES
+   ========================================================= */
+
+@media (max-width: 1180px){
+
+  #header .container{
+    gap:18px;
+  }
+
+  nav ul{
+    gap:17px;
+  }
+
+  nav a{
+    font-size:13px;
+  }
+
+  .division-grid,
+  .project-grid,
+  .projects-page-grid{
+    gap:24px;
+  }
+
+  .process-line{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+@media (max-width: 992px){
+
+  #header{
+    background:rgba(7,26,48,.94);
+    backdrop-filter:blur(14px);
+  }
+
+  #header.scrolled{
+    background:rgba(255,255,255,.97);
+  }
+
+  #header .container{
+    min-height:82px;
+    flex-wrap:wrap;
+  }
+
+  nav{
+    width:100%;
+    order:3;
+    display:none;
+    padding:10px 0 20px;
+  }
+
+  nav.open{
+    display:block;
+  }
+
+  nav ul{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+
+  nav a{
+    font-size:15px;
+  }
+
+  .btn-header{
+    margin-left:auto;
+  }
+
+  .menu-toggle{
+    display:flex;
+    width:44px;
+    height:44px;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:10px;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    background:transparent;
+  }
+
+  #header.scrolled .menu-toggle{
+    border-color:rgba(10,35,66,.25);
+  }
+
+  .menu-toggle span{
+    width:20px;
+    height:2px;
+    background:var(--white);
+    transition:var(--transition);
+  }
+
+  #header.scrolled .menu-toggle span{
+    background:var(--primary);
+  }
+
+  .hero{
+    min-height:820px;
+  }
+
+  .hero-content{
+    padding-top:140px;
+  }
+
+  .hero-content h1{
+    max-width:700px;
+  }
+
+  .division-grid,
+  .project-grid,
+  .projects-page-grid,
+  .service-grid-industrial,
+  .mission .container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .counter-grid,
+  .process-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .location-section .container,
+  .about-company .container,
+  .industrial-intro .container,
+  .marine-intro .container,
+  .ecopower-intro .container,
+  .industries-support .container,
+  .marine-showcase .container,
+  .contact-section .container{
+    grid-template-columns:1fr;
+  }
+
+  .location-image{
+    order:-1;
+  }
+
+  footer .container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .container,
+  .container-small{
+    width:min(92%,680px);
+  }
+
+  #header .container{
+    min-height:74px;
+  }
+
+  .logo img{
+    max-height:42px;
+  }
+
+  .btn-header{
+    display:none;
+  }
+
+  .hero{
+    min-height:740px;
+  }
+
+  .hero .overlay{
+    background:
+      linear-gradient(90deg,rgba(5,18,36,.90),rgba(10,35,66,.64)),
+      linear-gradient(0deg,rgba(5,18,36,.55),transparent 55%);
+  }
+
+  .hero-content{
+    padding-top:110px;
+  }
+
+  .hero-content h1{
+    font-size:clamp(48px,13vw,70px);
+  }
+
+  .hero-content p{
+    font-size:19px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:stretch;
+    max-width:320px;
+  }
+
+  .hero-buttons a{
+    width:100%;
+  }
+
+  .intro,
+  .divisions,
+  .why-prevtech,
+  .process-home,
+  .projects-home,
+  .projects-page,
+  .location-section,
+  .about-company,
+  .industrial-intro,
+  .marine-intro,
+  .ecopower-intro,
+  .industries-support,
+  .marine-showcase,
+  .contact-section,
+  .mission,
+  .industrial-services,
+  .marine-services,
+  .ecopower-services,
+  .industrial-process,
+  .leadership,
+  .industrial-cta,
+  .cta{
+    padding:85px 0;
+  }
+
+  .intro h2,
+  .section-title h2,
+  .location-content h2,
+  .about-left h2,
+  .intro-text h2,
+  .support-left h2,
+  .showcase-text h2,
+  .contact-info h2,
+  .leadership h2,
+  .industrial-cta h2,
+  .cta h2{
+    font-size:38px;
+  }
+
+  .intro p,
+  .section-title p,
+  .location-content p,
+  .about-left p,
+  .intro-text p,
+  .support-left p,
+  .showcase-text p,
+  .contact-info > p{
+    font-size:17px;
+  }
+
+  .section-title{
+    margin-bottom:45px;
+  }
+
+  .division-grid,
+  .project-grid,
+  .projects-page-grid,
+  .service-grid-industrial,
+  .mission .container,
+  .counter-grid,
+  .process-grid,
+  .process-line,
+  .support-list,
+  .showcase-grid{
+    grid-template-columns:1fr;
+  }
+
+  .division-image{
+    height:240px;
+  }
+
+  .project-card img,
+  .project-detail-card img{
+    height:240px;
+  }
+
+  .location-image img{
+    height:320px;
+  }
+
+  .page-hero{
+    padding:150px 0 90px;
+  }
+
+  .page-hero h1{
+    font-size:44px;
+  }
+
+  .page-hero p{
+    font-size:18px;
+  }
+
+  .contact-form{
+    padding:30px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  footer .container{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .container,
+  .container-small{
+    width:92%;
+  }
+
+  .hero{
+    min-height:700px;
+  }
+
+  .hero-content h5{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .hero-content h1{
+    font-size:46px;
+  }
+
+  .hero-content p{
+    font-size:17px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-green,
+  .btn-header,
+  .btn-secondary-dark{
+    min-height:50px;
+    padding:0 22px;
+  }
+
+  .intro h2,
+  .section-title h2,
+  .location-content h2,
+  .about-left h2,
+  .intro-text h2,
+  .support-left h2,
+  .showcase-text h2,
+  .contact-info h2,
+  .leadership h2,
+  .industrial-cta h2,
+  .cta h2{
+    font-size:32px;
+  }
+
+  .division-content,
+  .project-info,
+  .project-detail-info,
+  .mission-card,
+  .industrial-card,
+  .process-step,
+  .process-home-step,
+  .counter-box,
+  .intro-box,
+  .contact-form{
+    padding:26px;
+  }
+
+  .division-content h3,
+  .project-info h3,
+  .project-detail-info h3,
+  .industrial-card h3{
+    font-size:24px;
+  }
+
+  .counter-box h2{
+    font-size:42px;
+  }
+
+  .page-hero h1{
+    font-size:36px;
+  }
+
+  .page-hero p{
+    font-size:17px;
+  }
+
+  .location-image img{
+    height:260px;
+  }
+
+  .division-image,
+  .project-card img,
+  .project-detail-card img{
+    height:220px;
+  }
+
+  .footer-bottom{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+}
+
+/* Desktop default: hide mobile button */
+@media (min-width: 993px){
+  .menu-toggle{
+    display:none;
+  }
+}

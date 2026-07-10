@@ -1,88 +1,307 @@
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset='utf-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Contact — PrevTech Group LLC</title>
-  <link rel='stylesheet' href='./assets/css/styles.css' />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | PREVTECH GROUP</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
 
-<header class='site-header small'>
-  <nav class='nav container'>
-    <a class='brand' href='./'>
-      <img src='./assets/images/logo-prevtech.svg' alt='PrevTech mark' class='brand-mark' />
-      <span class='brand-text'>PREVTECH<span class='brand-light'>GROUP</span></span>
-    </a>
-    <button class='nav-toggle' aria-label='Open menu' aria-expanded='false'>☰</button>
-    <ul class='menu'>
-      <li><a href='./divisions.html'>Divisions</a></li>
-      <li><a href='./projects.html'>Projects</a></li>
-      <li><a href='./about.html'>About</a></li>
-      <li><a href='./contact.html'>Contact</a></li>
-      <li><a class='btn btn-primary' href='./contact.html#quote'>Request a Quote</a></li>
-      <li class='lang-switch'><a class='active' href='./'>EN</a> | <a href='./es/'>ES</a></li>
-    </ul>
-  </nav>
-  <section class="sub-hero"><div class="container"><h1>Contact</h1><p>Let’s discuss your maintenance, projects or energy needs.</p></div></section>
+<header id="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+<img src="images/logo-white.png" alt="PREVTECH GROUP">
+</a>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="industrial.html">Industrial Services</a></li>
+<li><a href="marine.html">Marine</a></li>
+<li><a href="ecopower.html">EcoPower</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<a class="btn-header" href="contact.html">
+Contact Us
+</a>
+
+</div>
+
 </header>
 
-<main class='container section'>
-  <div class='split contact-split'>
-    <div>
-      <h2>Get in touch</h2>
-      <p>Email: <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a></p>
-      <p>Location: Puerto Rico</p>
-      <h3 id='quote'>Request a Quote</h3>
-      <form class='contact-form' netlify>
-        <div class='form-row'><label for='name'>Name*</label><input id='name' name='name' required /></div>
-        <div class='form-row'><label for='email'>Email*</label><input id='email' name='email' type='email' required /></div>
-        <div class='form-row'><label for='service'>Service</label>
-          <select id='service' name='service'>
-            <option>Maintenance</option>
-            <option>Projects</option>
-            <option>Steril</option>
-            <option>Marine</option>
-            <option>EcoPower</option>
-          </select>
-        </div>
-        <div class='form-row'><label for='message'>Message</label><textarea id='message' name='message' rows='5'></textarea></div>
-        <button class='btn btn-primary' type='submit'>Send</button>
-      </form>
-    </div>
-    <div class='contact-card'>
-      <h3>Why PrevTech?</h3>
-      <ul class='check'><li>Safety and compliance</li><li>On-time delivery</li><li>Transparent reporting</li></ul>
-    </div>
-  </div>
-</main>
+<section class="page-hero contact-hero">
 
-<footer class='site-footer'>
-  <div class='container footer-grid'>
-    <div>
-      <strong>PrevTech Group LLC</strong><br />
-      Excellence in Maintenance & Project<br />
-      <a href='mailto:carmelo.gonzalez@prevtechgroup.com'>carmelo.gonzalez@prevtechgroup.com</a>
-    </div>
-    <nav class='footer-nav'>
-      <a href='./divisions.html'>Divisions</a>
-      <a href='./projects.html'>Projects</a>
-      <a href='./about.html'>About</a>
-      <a href='./contact.html'>Contact</a>
-    </nav>
-    <div class='footer-copy'>© 2025 PrevTech Group LLC</div>
-  </div>
+<div class="container-small">
+
+<h1>Contact Us</h1>
+
+<p>
+Let's discuss your next industrial, marine or renewable energy project.
+</p>
+
+</div>
+
+</section>
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-info">
+
+<span class="eyebrow">
+Get In Touch
+</span>
+
+<h2>
+Ready to Start Your Project?
+</h2>
+
+<p>
+Contact PREVTECH Group for engineering consulting, industrial services, marine technology integration and renewable energy solutions.
+</p>
+
+<div class="contact-details">
+
+<div>
+<h3>Email</h3>
+<p>info@prevtechgroup.com</p>
+</div>
+
+<div>
+<h3>Location</h3>
+<p>Puerto Rico</p>
+</div>
+
+<div>
+<h3>Divisions</h3>
+<p>Industrial • Marine • EcoPower</p>
+</div>
+
+</div>
+
+</div>
+
+<form
+class="contact-form"
+action="https://formsubmit.co/info@prevtechgroup.com"
+method="POST"
+>
+
+<input
+type="hidden"
+name="_subject"
+value="New Website Inquiry | PREVTECH GROUP">
+
+<input
+type="hidden"
+name="_template"
+value="table">
+
+<input
+type="hidden"
+name="_captcha"
+value="false">
+
+<input
+type="hidden"
+name="_next"
+value="thankyou.html">
+
+<input
+type="text"
+name="_honey"
+style="display:none">
+
+<div class="form-row">
+
+<input
+type="text"
+name="Full Name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+name="Email"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="form-row">
+
+<input
+type="text"
+name="Phone"
+placeholder="Phone">
+
+<input
+type="text"
+name="Company"
+placeholder="Company">
+
+</div>
+
+<select
+name="Service"
+required>
+
+<option value="" selected disabled>
+Service Interest
+</option>
+
+<option>
+Industrial Services
+</option>
+
+<option>
+Marine
+</option>
+
+<option>
+EcoPower
+</option>
+
+<option>
+General Inquiry
+</option>
+
+</select>
+
+<textarea
+name="Project Description"
+placeholder="Tell us about your project"
+required></textarea>
+
+<button
+type="submit"
+class="btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div class="footer-brand">
+
+<img src="images/logo-white.png" alt="PREVTECH GROUP" class="footer-logo">
+
+<p class="footer-tagline">
+Excellence in Maintenance & Projects
+</p>
+
+<p>
+Engineering, maintenance, marine technology and renewable energy solutions delivered with technical excellence, reliability and commitment.
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<ul class="footer-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="industrial.html">Industrial Services</a></li>
+<li><a href="marine.html">Marine</a></li>
+<li><a href="ecopower.html">EcoPower</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Our Services</h4>
+
+<ul class="footer-links">
+
+<li>Industrial Services</li>
+<li>Marine Technology</li>
+<li>EcoPower</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<h5>Location</h5>
+<p>Puerto Rico</p>
+
+<h5>Email</h5>
+<p>
+<a href="mailto:info@prevtechgroup.com">
+info@prevtechgroup.com
+</a>
+</p>
+
+<h5>Services</h5>
+<p>
+Engineering<br>
+Maintenance<br>
+Marine Technology<br>
+Renewable Energy
+</p>
+
+<h5>Website</h5>
+<p>
+<a href="https://www.prevtechgroup.com">
+www.prevtechgroup.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© 2026 PREVTECH GROUP. All Rights Reserved.
+</p>
+
+</div>
+
 </footer>
 
-
-<script>
-const btn = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.menu');
-if (btn && menu) btn.addEventListener('click', ()=> {
-  const open = menu.classList.toggle('open');
-  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
-</script>
+<script src="js/app.js"></script>
 
 </body>
+
 </html>
