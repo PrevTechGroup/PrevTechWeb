@@ -29,15 +29,19 @@
 </a>
 
 <nav>
+
 <ul>
+
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="industrial.html">Industrial Services</a></li>
 <li><a href="marine.html">Marine</a></li>
 <li><a href="ecopower.html">EcoPower</a></li>
 <li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+
 </ul>
+
 </nav>
 
 <a class="btn-header" href="contact.html">
@@ -77,24 +81,38 @@ Ready to Start Your Project?
 </h2>
 
 <p>
-Contact PREVTECH Group for engineering consulting, industrial services, marine technology integration and renewable energy solutions.
+Contact PREVTECH Group for engineering consulting, industrial services,
+marine technology integration and renewable energy solutions.
 </p>
 
 <div class="contact-details">
 
 <div>
+
 <h3>Email</h3>
-<p>info@prevtechgroup.com</p>
+
+<p>
+<a href="mailto:info@prevtechgroup.com">
+info@prevtechgroup.com
+</a>
+</p>
+
 </div>
 
 <div>
+
 <h3>Location</h3>
+
 <p>Puerto Rico</p>
+
 </div>
 
 <div>
+
 <h3>Divisions</h3>
+
 <p>Industrial • Marine • EcoPower</p>
+
 </div>
 
 </div>
@@ -110,92 +128,103 @@ method="POST"
 <input
 type="hidden"
 name="_subject"
-value="New Website Inquiry | PREVTECH GROUP">
+value="New Website Inquiry | PREVTECH GROUP"
+>
 
 <input
 type="hidden"
 name="_template"
-value="table">
+value="table"
+>
 
 <input
 type="hidden"
-name="_captcha"
-value="false">
+name="_url"
+value="https://www.prevtechgroup.com/contact.html"
+>
 
 <input
 type="hidden"
-name="_next"
-value="thankyou.html">
+name="_autoresponse"
+value="Thank you for contacting PREVTECH GROUP. We have received your inquiry and a member of our team will review it shortly. We typically respond within one business day. For urgent matters, please contact us at info@prevtechgroup.com."
+>
 
 <input
 type="text"
 name="_honey"
-style="display:none">
+style="display:none"
+tabindex="-1"
+autocomplete="off"
+>
 
 <div class="form-row">
 
 <input
 type="text"
-name="Full Name"
+name="name"
 placeholder="Full Name"
-required>
+required
+>
 
 <input
 type="email"
-name="Email"
+name="email"
 placeholder="Email Address"
-required>
+required
+>
 
 </div>
 
 <div class="form-row">
 
 <input
-type="text"
-name="Phone"
-placeholder="Phone">
+type="tel"
+name="phone"
+placeholder="Phone"
+>
 
 <input
 type="text"
-name="Company"
-placeholder="Company">
+name="company"
+placeholder="Company"
+>
 
 </div>
 
-<select
-name="Service"
-required>
+<select name="service" required>
 
 <option value="" selected disabled>
 Service Interest
 </option>
 
-<option>
+<option value="Industrial Services">
 Industrial Services
 </option>
 
-<option>
+<option value="Marine">
 Marine
 </option>
 
-<option>
+<option value="EcoPower">
 EcoPower
 </option>
 
-<option>
+<option value="General Inquiry">
 General Inquiry
 </option>
 
 </select>
 
 <textarea
-name="Project Description"
+name="message"
 placeholder="Tell us about your project"
-required></textarea>
+required
+></textarea>
 
 <button
 type="submit"
-class="btn-primary">
+class="btn-primary"
+>
 
 Send Message
 
@@ -213,14 +242,19 @@ Send Message
 
 <div class="footer-brand">
 
-<img src="images/logo-white.png" alt="PREVTECH GROUP" class="footer-logo">
+<img
+src="images/logo-white.png"
+alt="PREVTECH GROUP"
+class="footer-logo"
+>
 
 <p class="footer-tagline">
-Excellence in Maintenance & Projects
+Excellence in Maintenance &amp; Projects
 </p>
 
 <p>
-Engineering, maintenance, marine technology and renewable energy solutions delivered with technical excellence, reliability and commitment.
+Engineering, maintenance, marine technology and renewable energy
+solutions delivered with technical excellence, reliability and commitment.
 </p>
 
 </div>
@@ -265,6 +299,7 @@ Engineering, maintenance, marine technology and renewable energy solutions deliv
 <p>Puerto Rico</p>
 
 <h5>Email</h5>
+
 <p>
 <a href="mailto:info@prevtechgroup.com">
 info@prevtechgroup.com
@@ -272,6 +307,7 @@ info@prevtechgroup.com
 </p>
 
 <h5>Services</h5>
+
 <p>
 Engineering<br>
 Maintenance<br>
@@ -280,6 +316,7 @@ Renewable Energy
 </p>
 
 <h5>Website</h5>
+
 <p>
 <a href="https://www.prevtechgroup.com">
 www.prevtechgroup.com
